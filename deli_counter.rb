@@ -2,13 +2,14 @@
 def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
-  else puts "Your current place in line is #{katz_deli.size+1}."
+  else katz_deli.each {|name| }
+     "The line is currently #{katz_deli.size+1}."
   end
 
 end
 
 def take_a_number(katz_deli, name)
-  name << katz_deli
+  katz_deli << name
   puts "#{name} you are #{katz_deli.size+1} in line"
 
 end
